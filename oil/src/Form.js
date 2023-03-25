@@ -1,11 +1,14 @@
 import React from 'react'
 import './Form.css'
+import image from './'
 
 
 export default function Form() {
   return (
     <>
     <center>
+      <div class="con">
+        <img src=""></img>
     <div class="container">
         
     <form>
@@ -76,6 +79,7 @@ export default function Form() {
         <input type="email" required></input>
     </form>
     </div>  
+    </div>
     </center>
     </>
   )

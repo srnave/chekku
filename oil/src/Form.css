@@ -1,6 +1,9 @@
 .container {
     width: 250px;
     clear: both;
+
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
   }
   
   .container input {
@@ -16,4 +19,8 @@
     display: inline-block;
     width: 250px;
     text-align: left;
+  }
+  .con{
+    background-color: #e6f0ff;
+    background-image: ;
   }
