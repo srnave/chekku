@@ -11,7 +11,11 @@
     clear: both;
   }
 
-  #country-state {
+  #country {
+    width: 100%;
+    clear: both;
+  }
+  #state {
     width: 100%;
     clear: both;
   }
@@ -24,3 +28,17 @@
     background-color: #e6f0ff;
     background-image: ;
   }
+
+  .button {
+    background-color:black;
+    color:white;  
+    border: none;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    margin: 10px 2px;
+    cursor:pointer;
+  }
+
+  

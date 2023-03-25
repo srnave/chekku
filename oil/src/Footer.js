@@ -12,7 +12,7 @@ export default function Footer() {
 
     <h4>About Us</h4>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus euismod, faucibus metus ut, semper nibh. Aenean euismod justo eu enim dapibus suscipit.</p>
+    <p></p>
 
   </div>
 
@@ -22,11 +22,11 @@ export default function Footer() {
 
     <ul>
 
-      <li><a href="#"><i class="fa fa-angle-right"></i> Subscription</a></li>
+      <li><a href=""><i class="fa fa-angle-right"></i> Subscription</a></li>
 
-      <li><a href="#"><i class="fa fa-angle-right"></i> Contact us</a></li>
+      <li><a href=""><i class="fa fa-angle-right"></i> Contact us</a></li>
 
-      <li><a href="#"><i class="fa fa-angle-right"></i> Bug report</a></li>
+      <li><a href=""><i class="fa fa-angle-right"></i> Bug report</a></li>
 
     </ul>
 
