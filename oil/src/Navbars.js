@@ -1,7 +1,6 @@
 import React from "react";
 import './Navbars.css';
 import Routing from "./Routing";
-
 function Navbars(){
     return(
         <>
@@ -11,6 +10,7 @@ function Navbars(){
   <a href="form"><i class="fa fa-fw fa-envelope"></i> Shop</a>
   <a href="#"><i class="fa fa-fw fa-user"></i> Contact</a>
 </div>
+
         </>
     )
 }
