@@ -1,5 +1,6 @@
 import React from 'react'
 import './Form.css'
+import Footer from './Footer'
 export default function Form() {
   return (
     <>
@@ -318,8 +319,10 @@ export default function Form() {
         <button type="submit" class="button .button1">Order</button>
     </form>
     </div>  
+    
     </div>
     </center>
+    <Footer/>
     </>
   )
 }
