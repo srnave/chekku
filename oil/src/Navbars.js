@@ -1,22 +1,4 @@
-// import React from "react";
-// import './Navbars.css';
-// import Routing from "./Routing";
-// function Navbars(){
-//     return(
-//         <>
-//         <div class="navbar">
-//   <a class="active" href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-//   <a href="#"><i class="fa fa-fw fa-search"></i> About us</a>
-//   <a href="form"><i class="fa fa-fw fa-envelope"></i> Shop</a>
-//   <a href="#"><i class="fa fa-fw fa-user"></i> Contact</a>
-// </div>
 
-//         </>
-//     )
-// }
-// export default Navbars;
-
-//main page
 import { Outlet, Link } from "react-router-dom";
 import Home from "./Home";
 import "./Navbars.css";
