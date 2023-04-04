@@ -51,7 +51,11 @@ const myStyle3={
   <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         
         <h1>Our Products</h1>
+<<<<<<< HEAD
         <p>TASTE THE FLAVOR, MISS THE FAT</p>
+=======
+        <p>Shop our pure products and enjoy</p>
+>>>>>>> d21e4689ccb7bd212bca46fec0895bb359e2bb06
 
         <br></br><br></br>
         <section class="articles">
@@ -63,7 +67,7 @@ const myStyle3={
       <div class="article-body">
         <h2>Coconut Oil</h2>
         <p>
-        At Aalaa we provide the pure and raw honey with the natural content and attributes that define quality. Our pure and raw honey promises the balanced blends of different flora from all over the nation. We have the best collection of honey with us, explore to check our collection of authentic honey. We are very assured about the Quality of Honey we provide. It is 100% Raw & Pure. Buy Honey Online!
+        At RK we provide the pure and raw oil with the natural content and attributes that define quality. Our pure and raw oil promises the balanced blends of different flora from all over the nation. We have the best collection of oil with us, explore to check our collection of authentic oil. We are very assured about the Quality of Oil we provide. It is 100% Raw & Pure. Buy pure Oil !
         </p>
       </div>
     </div>
@@ -77,7 +81,7 @@ const myStyle3={
       <div class="article-body">
         <h2>Groundnut Oil</h2>
         <p>
-        We deliver honey with 100% Natural & Organic. Getting from the upper reaches of the forest and Mountains, here comes honey, which remains as pure and pristine as the Mother Nature itself. It can be called as Certified Organic, which remains 100 per cent natural, and creamy. Our honey is a harmonious composition of the natural flora and fauna, which remains befitting for all sweetening purposes. Buy Honey Online!
+        We provide Oil with 100% Natural & Organic. Using  the natural traditional way , we produce oil, which remains as pure and pristine  itself. It can be called as Certified Organic, which remains 100 per cent natural, and creamy. Our oil is a harmonious composition of the natural and healthy , which remains befitting for all cooking purposes. Buy pure Oil!
         </p>
         
       </div>
@@ -92,15 +96,21 @@ const myStyle3={
       <div class="article-body">
         <h2>Sesame Oil</h2>
         <p>
-        We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
+        We make Oil and sell it without any processing or adulterations. Needless to say that it remains Saturated, Unprocessed and Unheated Oil. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with vitamin E. Besides, it also remains with antibacterial and anti-fungal properties. Buy pure Oil!
         </p>
         
       </div>
     </div>
   </article>
+<<<<<<< HEAD
   
   <article>
 
+=======
+  <center>
+  {/* <article>
+   
+>>>>>>> d21e4689ccb7bd212bca46fec0895bb359e2bb06
     <div class="article-wrapper">
       <figure>
       <img  style={myStyle2} src={image12}/>
@@ -108,11 +118,12 @@ const myStyle3={
       <div class="article-body">
         <h2>Ghee</h2>
         <p>
-        We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
+        We make Oil and sell it without any processing or adulterations. Needless to say that it remains Saturated, Unprocessed and Unheated Oil. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with vitamin E. Besides, it also remains with antibacterial and anti-fungal properties. Buy pure Oil!
         </p>
         
       </div>
     </div>
+<<<<<<< HEAD
   </article>
   <article>
 
@@ -129,6 +140,11 @@ const myStyle3={
       </div>
     </div>
   </article>
+=======
+   
+  </article> */}
+  </center>
+>>>>>>> d21e4689ccb7bd212bca46fec0895bb359e2bb06
 </section>
 <br></br><br></br><br></br>
         <h1>About Our Services</h1>
@@ -142,7 +158,7 @@ const myStyle3={
       <div class="article-body">
         <h2>Raw & Pure</h2>
         <p>
-        At Aalaa we provide the pure and raw honey with the natural content and attributes that define quality. Our pure and raw honey promises the balanced blends of different flora from all over the nation. We have the best collection of honey with us, explore to check our collection of authentic honey. We are very assured about the Quality of Honey we provide. It is 100% Raw & Pure. Buy Honey Online!
+        At Radhe Krishna Oils we provide the pure and healthy Oil with the natural content and attributes that define quality. Our pure and healthy oil promises the balanced blends . We have the best Oil products, explore to check our Oils. We are very assured about the Quality of Honey we provide. It is 100% healthy & Pure. Buy Pure Oil!
         </p>
       </div>
     </div>
@@ -156,7 +172,7 @@ const myStyle3={
       <div class="article-body">
         <h2>Natural and Organic</h2>
         <p>
-        We deliver honey with 100% Natural & Organic. Getting from the upper reaches of the forest and Mountains, here comes honey, which remains as pure and pristine as the Mother Nature itself. It can be called as Certified Organic, which remains 100 per cent natural, and creamy. Our honey is a harmonious composition of the natural flora and fauna, which remains befitting for all sweetening purposes. Buy Honey Online!
+        We deliver honey with 100% Natural & Organic. Getting from the raw materials from own farm and naturally proceesed, here comes different types of oil, which remains as pure and pristine as the Mother Nature itself. It can be called as Certified Organic, which remains 100 per cent natural. Our Oil is  befitting for all cooking purposes. Buy pure Oil!
         </p>
         
       </div>
@@ -171,7 +187,7 @@ const myStyle3={
       <div class="article-body">
         <h2>Processed</h2>
         <p>
-        We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
+        We make Oil and sell it without any processing or adulterations. Needless to say that it remains Saturated, Unprocessed and Unheated Oil. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with vitamin E. Besides, it also remains with antibacterial and anti-fungal properties. Buy pure Oil!
         </p>
         
       </div>
