@@ -51,11 +51,11 @@ const myStyle3={
   <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         
         <h1>Our Products</h1>
-<<<<<<< HEAD
+        <br></br>
+
         <p>TASTE THE FLAVOR, MISS THE FAT</p>
-=======
-        <p>Shop our pure products and enjoy</p>
->>>>>>> d21e4689ccb7bd212bca46fec0895bb359e2bb06
+<br></br>
+        <p>SHOP OUR PURE PRODUCTS AND ENJOY</p>
 
         <br></br><br></br>
         <section class="articles">
@@ -102,15 +102,8 @@ const myStyle3={
       </div>
     </div>
   </article>
-<<<<<<< HEAD
-  
-  <article>
-
-=======
-  <center>
-  {/* <article>
+   <article>
    
->>>>>>> d21e4689ccb7bd212bca46fec0895bb359e2bb06
     <div class="article-wrapper">
       <figure>
       <img  style={myStyle2} src={image12}/>
@@ -123,9 +116,9 @@ const myStyle3={
         
       </div>
     </div>
-<<<<<<< HEAD
+
   </article>
-  <article>
+  {/* <article>
 
     <div class="article-wrapper">
       <figure>
@@ -134,18 +127,13 @@ const myStyle3={
       <div class="article-body">
         <h2>Oil Cake</h2>
         <p>
-        We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
+        We take  and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
         </p>
         
       </div>
     </div>
-  </article>
-=======
-   
   </article> */}
-  </center>
->>>>>>> d21e4689ccb7bd212bca46fec0895bb359e2bb06
-</section>
+</section> 
 <br></br><br></br><br></br>
         <h1>About Our Services</h1>
         <br></br><br></br>
