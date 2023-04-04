@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import './Form.css'
 import Footer from './Footer'
 import emailjs from '@emailjs/browser';
+import image from '../src/images/images.jpg';
 export default function Form() {
   // const [formState,setFormState]=useState({});
   
@@ -42,19 +43,20 @@ export default function Form() {
   };
   return (
     <>
-    <center>
-      <div class="con">
+  <center>
+    
     <div class="container">
-        
+      <div class="left">
+        <div class="form">       
     <form ref={form} onSubmit={sendEmail}>
         <label>Name *</label>
-        <input type="text" name='name'  required></input>
+        <input type="text" name='name' class="form-field animation a3" required></input>
         <br></br><br></br>
         {/* <label>Last name *</label>
         <input type="text" required></input>
         <br></br><br></br> */}
         <label for="country">Products *</label>
-        <select id="country" name="oil">
+        <select id="country" class="form-field animation a3" name="oil">
         <option value=""></option>
     <option value="coconutoil">Coconut Oil</option>
 <option value="groundnutoil">Groundnut oil</option>
@@ -63,13 +65,13 @@ export default function Form() {
 </select>
         <br></br><br></br>
         <label>Street address *</label>
-        <input type="text" name='address'  required></input>
+        <input type="text" class="form-field animation a3" name='address'  required></input>
         <br></br><br></br>
         <label>Town / City *</label>
-        <input type="text" name='city'  required></input>
+        <input type="text" class="form-field animation a3" name='city'  required></input>
         <br></br><br></br>
         <label for="state">State *</label>
-    <select id="state" name="state" >
+    <select id="state" class="form-field animation a3" name="state" >
     <option value=""></option>
     <option value="AN">Andaman and Nicobar Islands</option>
     <option value="AP">Andhra Pradesh</option>
@@ -109,23 +111,24 @@ export default function Form() {
     <option value="UT">Uttarakhand</option>
     <option value="WB">West Bengal</option>
 </select>
-        <br></br><br></br>
-        <label>Postcode / ZIP *</label>
-        <input type="text" name='pin'  required></input>
+       
         <br></br><br></br>
         <label>Phone *</label>
-        <input type="text" name='phone'  required></input>
+        <input type="text" class="form-field animation a3" name='phone'  required></input>
         <br></br><br></br>
         <label>Email address *</label>
-        <input type="email" name='user_email'  required></input>
+        <input type="email" class="form-field animation a3"name='user_email'  required></input>
         <br></br><br></br>
-        <input type="submit" value="send" class="button .button1"></input>
+        <input   type="submit"  class="button .button1" value="send" ></input>
         {/* <button type="submit" class="button .button1">Order</button> */}
     </form>
     </div>  
     
     </div>
-    </center>
+   </div>
+  </center>
+  
+    <br/>
     <Footer/>
     </>
   )
