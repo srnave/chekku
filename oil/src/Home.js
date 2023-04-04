@@ -14,7 +14,6 @@ import image9 from '../src/images/rkcoconut.jpg'
 import image10 from '../src/images/rkgroundnut.jpg'
 import image11 from '../src/images/rksesame.jpg'
 import image12 from '../src/images/rkghee.jpg'
-//import Product from "./Product";
 
 
 
@@ -163,7 +162,6 @@ const myStyle3={
 
         </center>
         </div>
-        {/* <Product/> */}
          <Footer/> 
         </>
     )

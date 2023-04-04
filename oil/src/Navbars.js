@@ -25,7 +25,7 @@ const Navbars = () => {
             <Link to="/form" className="navbar1" >SHOP</Link>
           </li>
           <li>
-            <Link to="/form" className="navbar1" >PRODUCTS</Link>
+            <Link to="/product" className="navbar1" >PRODUCTS</Link>
           </li>
           <li>
             <Link to="/"  className="navbar1"  >ABOUT US</Link>
