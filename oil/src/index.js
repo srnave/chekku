@@ -21,6 +21,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbars from "./Navbars";
 import Home from "./Home";
 import Form from "./Form";
+import Product from"./Product";
 
 
 export default function App() {
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/" element={<Navbars />}>
           <Route index element={<Home />} />
           <Route path="form" element={<Form />} />
+          <Route path="product" element={<Product />} />
         </Route>
       </Routes>
     </BrowserRouter>
