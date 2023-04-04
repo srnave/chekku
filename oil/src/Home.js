@@ -14,6 +14,8 @@ import image9 from '../src/images/rkcoconut.jpg'
 import image10 from '../src/images/rkgroundnut.jpg'
 import image11 from '../src/images/rksesame.jpg'
 import image12 from '../src/images/rkghee.jpg'
+//import Product from "./Product";
+
 
 
 function Home(){
@@ -149,7 +151,7 @@ const myStyle3={
       <img  style={myStyle3} src={image4}/>
       </figure>
       <div class="article-body">
-        <h2>Unprocessed</h2>
+        <h2>Processed</h2>
         <p>
         We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
         </p>
@@ -161,6 +163,7 @@ const myStyle3={
 
         </center>
         </div>
+        {/* <Product/> */}
          <Footer/> 
         </>
     )

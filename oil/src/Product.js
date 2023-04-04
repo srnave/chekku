@@ -1,27 +1,37 @@
 import React from 'react'
 import './Product.css'
+import image1 from '../src/images/rkcoconut.jpg'
+import image2 from '../src/images/rkgroundnut.jpg'
 
-export default function () {
+export default function Product() {
   return (
     <>
-    <h2 style="text-align:center">Product Card</h2>
+    <div class="card">
 
-<div class="card">
-  <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%"/>
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-  <p><button>Add to Cart</button></p>
+<div class="imgBox">
+  <img src={image1} alt="mouse corsair" class="mouse"/>
 </div>
-<h2 style="text-align:center">Product Card</h2>
 
-<div class="card">
-  <img src="/w3images/jeans3.jpg" alt="Denim Jeans" style="width:100%"/>
-  <h1>Tailored Jeans</h1>
-  <p class="price">$19.99</p>
-  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-  <p><button>Add to Cart</button></p>
+<div class="contentBox">
+  <h3>Mouse Corsair M65</h3>
+  <h2 class="price">61.<small>98</small> €</h2>
+  <a href="#" class="buy">Buy Now</a>
 </div>
+</div>
+<div class="card">
+
+<div class="imgBox">
+  <img src={image2} alt="mouse corsair" class="mouse"/>
+</div>
+
+<div class="contentBox">
+  <h3>Mouse Corsair M65</h3>
+  <h2 class="price">61.<small>98</small> €</h2>
+  <a href="#" class="buy">Buy Now</a>
+</div>
+</div>
+
+
 
     </>
   )
