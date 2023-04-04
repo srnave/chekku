@@ -6,7 +6,7 @@ import logo from '../src/images/logo.jpg';
 
 const Navbars = () => {
   const myStyle={
-    height:'100px',
+    height:'80px',
     width:'130px'
   }
   return (
@@ -14,16 +14,18 @@ const Navbars = () => {
     <div className="navbar">
       <nav >
         <ul>
-          <li>
-            <center>
-            <img style={myStyle} src={logo}/>
-            </center>
-          </li>
+          
           <li>
             <Link to="/"  className="navbar1"  >HOME</Link>
           </li>
           <li>
-            <Link to="/form" className="navbar1" >Shop</Link>
+            <Link to="/form" className="navbar1" >SHOP</Link>
+          </li>
+          <li>
+            <Link to="/"  className="navbar1"  >ABOUT US</Link>
+          </li>
+          <li>
+            <Link to="/"  className="navbar1"  >CONTACT</Link>
           </li>
         </ul>
       </nav>
