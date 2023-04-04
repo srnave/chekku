@@ -1,8 +1,14 @@
 .navbar {
-    width: 100%;
-    background-color:white;
-    overflow:auto;
+  font-size: 0px;
+  letter-spacing: 0;
+  word-spacing: 0px;
+  line-height: 0;
+  display: block;
+  visibility: visible;
+  overflow: visible;
+  -webkit-backface-visibility: hidden;
   }
+
   
   /* Navbar links */
   .navbar a {

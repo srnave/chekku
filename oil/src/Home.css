@@ -6,7 +6,7 @@ article {
   position: relative;
   border-radius: 16px;
   box-shadow: none;
-  background: #fff;
+  background:white;
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   overflow: hidden;
@@ -208,4 +208,8 @@ img:nth-child(4) {
 }
 img:nth-child(5) {
   animation-delay: 8s;
+}
+
+.back{
+  background-color: white;
 }

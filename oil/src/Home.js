@@ -35,6 +35,7 @@ const myStyle3={
 };
     return(
         <>
+        <div className="back">
         <center>
             <br></br>
             <div class="pic-ctn">
@@ -159,6 +160,7 @@ const myStyle3={
 </section>
 
         </center>
+        </div>
          <Footer/> 
         </>
     )
