@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import './Form.css'
 import Footer from './Footer'
 import emailjs from '@emailjs/browser';
-import image from '../src/images/images.jpg';
+// import image from '../src/images/images.jpg';
 export default function Form() {
   // const [formState,setFormState]=useState({});
   
@@ -36,7 +36,7 @@ export default function Form() {
       .then((result) => {
           console.log(result.text);
           console.log("message sent");
-          alert("orderes mailed to owner");
+          alert("Order mail sent to owner");
       }, (error) => {
           console.log(error.text);
       });
@@ -56,7 +56,7 @@ export default function Form() {
         <input type="text" required></input>
         <br></br><br></br> */}
         <label for="country">Products *</label>
-        <select id="country" class="form-field animation a3" name="oil">
+        <select id="country" class="form-field animation a3" name="oil"multiple >
         <option value=""></option>
     <option value="coconutoil">Coconut Oil</option>
 <option value="groundnutoil">Groundnut oil</option>
@@ -119,7 +119,7 @@ export default function Form() {
         <label>Email address *</label>
         <input type="email" class="form-field animation a3"name='user_email'  required></input>
         <br></br><br></br>
-        <input   type="submit"  class="button .button1" value="send" ></input>
+        <input   type="submit"  class="button .button1" value="SEND" ></input>
         {/* <button type="submit" class="button .button1">Order</button> */}
     </form>
     </div>  

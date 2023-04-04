@@ -14,6 +14,8 @@ import image9 from '../src/images/rkcoconut.jpg'
 import image10 from '../src/images/rkgroundnut.jpg'
 import image11 from '../src/images/rksesame.jpg'
 import image12 from '../src/images/rkghee.jpg'
+import image13 from '../src/images/rkoilcake.jpeg'
+import image14 from '../src/images/Oil-cake.jpg'
 
 
 
@@ -44,11 +46,12 @@ const myStyle3={
     <img style={myStyle1} src={image6}  class="pic"/>
     <img style={myStyle1} src={image7}  class="pic"/>
     <img style={myStyle1} src={image8}  class="pic"/>
+    <img style={myStyle1} src={image14}  class="pic"/>
   </div>
   <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         
         <h1>Our Products</h1>
-        <p>Shop our pure products and enjoy the food</p>
+        <p>TASTE THE FLAVOR, MISS THE FAT</p>
 
         <br></br><br></br>
         <section class="articles">
@@ -95,6 +98,7 @@ const myStyle3={
       </div>
     </div>
   </article>
+  
   <article>
 
     <div class="article-wrapper">
@@ -103,6 +107,21 @@ const myStyle3={
       </figure>
       <div class="article-body">
         <h2>Ghee</h2>
+        <p>
+        We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
+        </p>
+        
+      </div>
+    </div>
+  </article>
+  <article>
+
+    <div class="article-wrapper">
+      <figure>
+      <img  style={myStyle2} src={image13}/>
+      </figure>
+      <div class="article-body">
+        <h2>Oil Cake</h2>
         <p>
         We take Honey and we deliver it without any processing or adulterations. Needless to say that it remains Unpasteurized, Unprocessed and Unheated Honey. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with anti-inflammatory properties. Besides, it also remains with antibacterial and anti-fungal properties. Buy Honey Online!
         </p>
