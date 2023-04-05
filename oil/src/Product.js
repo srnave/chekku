@@ -6,6 +6,8 @@ import image1 from '../src/images/rkcoconut.jpg'
 import image2 from '../src/images/rkgroundnut.jpg'
 import image3 from '../src/images/rksesame.jpg'
 import image4 from '../src/images/rkghee.jpg'
+import { Link } from 'react-router-dom'
+import { Form } from 'react-router-dom'
 
 export default function Product() {
   return (
@@ -28,7 +30,8 @@ export default function Product() {
 <div class="contentBox">
   <h3>Coconut Oil</h3>
   <h2 class="price">Rs. 250.<small>50</small></h2>
-  <a href="#" class="buy">Buy Now</a>
+  <br/>
+ <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
 </div>
 </div>
 </div>
@@ -42,7 +45,8 @@ export default function Product() {
 <div class="contentBox">
   <h3>Groundnut Oil</h3>
   <h2 class="price">Rs. 240.<small>75</small></h2>
-  <a href="#" class="buy">Buy Now</a>
+  <br/>
+  <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
 </div>
 </div>
 </div>
@@ -56,7 +60,8 @@ export default function Product() {
 <div class="contentBox">
   <h3>Sesame Oil</h3>
   <h2 class="price">Rs. 380.<small>00</small></h2>
-  <a href="#" class="buy">Buy Now</a>
+  <br/>
+  <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
 </div>
 </div>
 </div>
@@ -70,7 +75,8 @@ export default function Product() {
 <div class="contentBox">
   <h3>Ghee</h3>
   <h2 class="price">Rs. 650.<small>50</small></h2>
-  <a href="#" class="buy">Buy Now</a>
+  <br/>
+  <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
 </div>
 </div>
 </div>
