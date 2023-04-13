@@ -18,12 +18,11 @@ import image13 from '../src/images/rkoilcake.jpeg'
 import image14 from '../src/images/Oil-cake.jpg'
 
 
-
 function Home(){
       
     const myStyle1={
       backgroundRepeat: 'no-repeat',
-      height:'400px',
+      height:'500px',
       width:'500px'
   };
   const myStyle2={
@@ -48,7 +47,7 @@ const myStyle3={
     <img style={myStyle1} src={image8}  class="pic"/>
     <img style={myStyle1} src={image14}  class="pic"/>
   </div>
-  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+  <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         
         <h1>Our Products</h1>
         <br></br>
@@ -102,7 +101,7 @@ const myStyle3={
       </div>
     </div>
   </article>
-   <article>
+   {/* <article>
    
     <div class="article-wrapper">
       <figure>
@@ -117,7 +116,7 @@ const myStyle3={
       </div>
     </div>
 
-  </article>
+  </article> */}
   {/* <article>
 
     <div class="article-wrapper">

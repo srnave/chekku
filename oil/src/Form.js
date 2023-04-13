@@ -56,14 +56,18 @@ export default function Form() {
         <input type="text" required></input>
         <br></br><br></br> */}
         <label for="country">Products *</label>
-        <select id="country" class="form-field animation a3" name="oil"multiple >
+        <select id="country" class="form-field animation a3" name="oil" >
         <option value=""></option>
     <option value="coconutoil">Coconut Oil</option>
 <option value="groundnutoil">Groundnut oil</option>
 <option value="sesameoil">Sesame oil</option>
-<option value="ghee">Ghee</option>
+{/* <option value="ghee">Ghee</option> */}
 </select>
+<br></br><br></br>
+<label>No of units(In litre)*</label>
+        <input type="number" name='num' class="form-field animation a3" required></input>
         <br></br><br></br>
+        
         <label>Street address *</label>
         <input type="text" class="form-field animation a3" name='address'  required></input>
         <br></br><br></br>
@@ -104,7 +108,7 @@ export default function Form() {
     <option value="PB">Punjab</option>
     <option value="RJ">Rajasthan</option>
     <option value="SK">Sikkim</option>
-    <option value="TN">Tamil Nadu</option>
+    <option value="TN" selected>Tamil Nadu</option>
     <option value="TG">Telangana</option>
     <option value="TR">Tripura</option>
     <option value="UP">Uttar Pradesh</option>
