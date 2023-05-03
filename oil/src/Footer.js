@@ -1,92 +1,79 @@
 import React from 'react'
 import './Footer.css'
 import image1 from '../src/images/logo.jpg'
-
+import logo from '../src/images/logo.jpg';
+import { Link } from 'react-router-dom';
 export default function Footer() {
-//   const myStyle1={
-//     backgroundRepeat: 'no-repeat',
-//     height:'200px',
-//     width:'300px'
-// };
+  const myStyle={
+    backgroundRepeat: 'no-repeat',
+    height:'200px',
+    width:'200px',
+    
+};
   return (
     <>
-    <footer>
+   
+<footer class="footer-distributed">
 
-<div class="row">
+			<div class="footer-left">
 
-  <div class="column">
-
-    <h4>About Us</h4>
-
-    <p>No.3/112 A, Adhireddypalayam,
-	K.Paramathi,
-	Karur, Tamil Nadu – 639111
-</p>
-
-  </div>
-
-  <div class="column">
-
-    {/* <h4>Quick Links</h4>
-
-    <ul>
-
-      <li><a href=""><i class="fa fa-angle-right"></i> Subscription</a></li>
-
-      <li><a href=""><i class="fa fa-angle-right"></i> Contact us</a></li>
-
-      <li><a href=""><i class="fa fa-angle-right"></i> Bug report</a></li>
-
-    </ul> */}
-
-  </div> 
-
-  {/* <div class="column">
-
-    <h4>Connect with Us</h4>
-
-    <ul class="social-icons">
-
-      <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-
-      <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
       
-      <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
 
-        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+				<p class="footer-links">
+          {/* <img style={myStyle}src={logo}/> */}
+          <Link to="/">HOME</Link>
+					
+					<Link to="/form"  >SHOP</Link>
+				
+          <Link to="/product" >PRODUCTS</Link>
+				
+					<Link to="/feedback" >FEEDBACK</Link>
+					
+					
+					<Link to="/">CONTACT</Link>
+				</p>
 
-    </ul>
+				<p class="footer-company-name">Sri RadheKrishna Chekku Oil</p>
+			</div>
 
-  </div> */}
-  {/* <div class="column">
+			<div class="footer-center">
 
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
 
-<ul class="social-icons">
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
 
-  <li><img style={myStyle1} src={image1}/></li>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:rk@gmail.com">rk@gmail.com</a></p>
+				</div>
 
+			</div>
 
-</ul>
+			<div class="footer-right">
 
-</div> */}
-  <div class="column">
+				<p class="footer-company-about" s>
+					<span>About the company</span>
+					<span>we provide the pure and raw oil with the natural content and attributes that define quality.</span>
+				</p>
 
-    <h4>Contact Us</h4>
+				{/* <div class="footer-icons">
 
-    <ul class="social-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
 
-      <li>+91 8220996938</li>
+				</div> */}
 
+			</div>
 
-    </ul>
-
-  </div>
-
-</div>
-
-<p class="copyright">© 2023 All Rights Reserved</p>
-
-</footer>
+		</footer>
 </>
   )
 }  

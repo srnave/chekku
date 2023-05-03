@@ -22,6 +22,7 @@ import Navbars from "./Navbars";
 import Home from "./Home";
 import Form from "./Form";
 import Product from"./Product";
+import Feedback from "./Feedback";
 
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="form" element={<Form />} />
           <Route path="product" element={<Product />} />
+          <Route path="feedback" element={<Feedback/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

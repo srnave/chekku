@@ -144,9 +144,9 @@ const myStyle3={
       </figure>
       <div class="article-body">
         <h2>Raw & Pure</h2>
-        <p>
+        {/* <p>
         At Radhe Krishna Oils we provide the pure and healthy Oil with the natural content and attributes that define quality. Our pure and healthy oil promises the balanced blends . We have the best Oil products, explore to check our Oils. We are very assured about the Quality of Honey we provide. It is 100% healthy & Pure. Buy Pure Oil!
-        </p>
+        </p> */}
       </div>
     </div>
   </article>
@@ -158,9 +158,9 @@ const myStyle3={
       </figure>
       <div class="article-body">
         <h2>Natural and Organic</h2>
-        <p>
+        {/* <p>
         We deliver honey with 100% Natural & Organic. Getting from the raw materials from own farm and naturally proceesed, here comes different types of oil, which remains as pure and pristine as the Mother Nature itself. It can be called as Certified Organic, which remains 100 per cent natural. Our Oil is  befitting for all cooking purposes. Buy pure Oil!
-        </p>
+        </p> */}
         
       </div>
     </div>
@@ -173,9 +173,9 @@ const myStyle3={
       </figure>
       <div class="article-body">
         <h2>Processed</h2>
-        <p>
+        {/* <p>
         We make Oil and sell it without any processing or adulterations. Needless to say that it remains Saturated, Unprocessed and Unheated Oil. This ensures that all the natural vitamins, phytonutrients, enzymes, and several other nutritional elements are retained. It offers all the benefits that come along with vitamin E. Besides, it also remains with antibacterial and anti-fungal properties. Buy pure Oil!
-        </p>
+        </p> */}
         
       </div>
     </div>
