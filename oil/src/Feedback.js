@@ -1,5 +1,7 @@
-import React from "react";
+import React ,{useRef}from "react";
 import './Feedback.css';
+import emailjs from '@emailjs/browser';
+import { Link } from "react-router-dom";
 const Feedback=()=>{
     const form = useRef();
 
@@ -10,13 +12,16 @@ const Feedback=()=>{
       .then((result) => {
           console.log(result.text);
           console.log("Sent");
+          alert("feedback sent");
       }, (error) => {
           console.log(error.text);
+          console.log(error);
       });
   };
 return(
     <>   
     <center> 
+      <form ref={form} onSubmit={sendEmail}>
     <div class="container">
   
     <label for="fname">Name</label>
@@ -30,10 +35,10 @@ return(
     <label for="subject">Subject</label>
     <textarea id="message" name="message" placeholder="Your feedback.." ></textarea>
 
-    <input   type="submit"  class="button .button1" value="SEND" ></input>
+    <Link to='/'><input   type="submit"  class="button .button1" value="SEND" ></input></Link>
 
 </div>
-
+</form>
 </center>
 </>
 
