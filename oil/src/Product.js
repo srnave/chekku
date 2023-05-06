@@ -31,7 +31,7 @@ export default function Product() {
   <h3>Coconut Oil</h3>
   <h2 class="price">Rs. 250.<small>50</small></h2>
   <br/>
- <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
+ <Link to='/login' ><a href="#" class="buy">Add to cart</a></Link>
 </div>
 </div>
 </div>
@@ -46,7 +46,7 @@ export default function Product() {
   <h3>Groundnut Oil</h3>
   <h2 class="price">Rs. 240.<small>75</small></h2>
   <br/>
-  <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
+  <Link to='/login' ><a href="#" class="buy" >Add to cart</a></Link>
 </div>
 </div>
 </div>
@@ -61,7 +61,7 @@ export default function Product() {
   <h3>Sesame Oil</h3>
   <h2 class="price">Rs. 380.<small>00</small></h2>
   <br/>
-  <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
+  <Link to='/login' ><a href="#" class="buy">Add to cart</a></Link>
 </div>
 </div>
 </div>
@@ -76,7 +76,7 @@ export default function Product() {
   <h3>Ghee</h3>
   <h2 class="price">Rs. 650.<small>50</small></h2>
   <br/>
-  <Link to='/form' ><a href="#" class="buy">Buy Now</a></Link>
+  <Link to='/login' ><a href="#" class="buy">Add to cart</a></Link>
 </div>
 </div>
 </div>

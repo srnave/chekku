@@ -1,6 +1,6 @@
 // import React from 'react';
 // import ReactDOM from 'react-dom/client';
-// import './index.css';
+
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,13 +17,15 @@
 // reportWebVitals();
 
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
 import Navbars from "./Navbars";
 import Home from "./Home";
 import Form from "./Form";
 import Product from"./Product";
 import Feedback from "./Feedback";
-
+import Register from "./Register";
+import Login from "./Login";
+import './index.css';
 
 export default function App() {
   return (
@@ -34,6 +36,8 @@ export default function App() {
           <Route path="form" element={<Form />} />
           <Route path="product" element={<Product />} />
           <Route path="feedback" element={<Feedback/>}/>
+          <Route path="register" element={<Register/>}/>
+          <Route path="login" element={<Login/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
