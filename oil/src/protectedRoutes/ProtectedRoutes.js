@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 
 import { UserContext } from "./UserContext";
-import Login from "../login/login";
-import NavBar from "../navbar/Navbar";
+import Login from "../Login";
+import NavBar from "../Navbars";
 import { Outlet } from "react-router-dom";
 
 

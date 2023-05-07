@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import './Form.css'
 import Footer from './Footer'
 import emailjs from '@emailjs/browser';
+import { useCart } from 'react-use-cart';
 // import image from '../src/images/images.jpg';
 export default function Form() {
   // const [formState,setFormState]=useState({});
@@ -41,7 +42,17 @@ export default function Form() {
           console.log(error.text);
       });
   };
+
+  const {isEmpty,
+    totalUniqueItems,
+    items,
+    totalItems,
+    cartTotal,
+    updateItemQuantity,
+    removeItem,
+    emptyCart, }=useCart();
   return (
+     
     <>
   <center>
     
@@ -55,18 +66,30 @@ export default function Form() {
         {/* <label>Last name *</label>
         <input type="text" required></input>
         <br></br><br></br> */}
+
         <label for="country">Products *</label>
-        <select id="country" class="form-field animation a3" name="oil" >
+        {items.map((item,index)=>{
+                return(
+                  <>  
+                  <br/>                <input name="oil" key={index} value={item.title}  readOnly ></input>
+                  <labe>Quantity:</labe> <input name="quantity" value={item.quantity} readOnly></input>
+                  <br/>
+                 
+                  </>
+
+                )
+              })}
+        
+        {/* <select id="country" class="form-field animation a3" name="oil" >
         <option value=""></option>
     <option value="coconutoil">Coconut Oil</option>
 <option value="groundnutoil">Groundnut oil</option>
 <option value="sesameoil">Sesame oil</option>
-{/* <option value="ghee">Ghee</option> */}
-</select>
+</select> */}
 <br></br><br></br>
-<label>No of units(In litre)*</label>
+{/* <label>No of units(In litre)*</label>
         <input type="number" name='num' class="form-field animation a3" required></input>
-        <br></br><br></br>
+        <br></br><br></br> */}
         
         <label>Street address *</label>
         <input type="text" class="form-field animation a3" name='address'  required></input>
@@ -115,15 +138,22 @@ export default function Form() {
     <option value="UT">Uttarakhand</option>
     <option value="WB">West Bengal</option>
 </select>
-       
-        <br></br><br></br>
-        <label>Phone *</label>
-        <input type="text" class="form-field animation a3" name='phone'  required></input>
+       <br></br><br></br>
+       <label>Phone *</label>
+        <input type="text" class="form-field animation a3" name='phone'></input>
         <br></br><br></br>
         <label>Email address *</label>
         <input type="email" class="form-field animation a3"name='user_email'  required></input>
         <br></br><br></br>
-        <input   type="submit"  class="button .button1" value="SEND" ></input>
+        <label>Total Quantity *</label>
+        <input type="text" class="form-field animation a3" name='tquantity' value={totalItems} readOnly></input>
+        <br></br><br></br>
+        <label>Total Amount *</label>
+        <input type="text" class="form-field animation a3" name='price' value={cartTotal} readOnly></input>
+        <br></br><br></br>
+        
+        <button type="submit" value="send" >Send</button>
+     
         {/* <button type="submit" class="button .button1">Order</button> */}
     </form>
     </div>  

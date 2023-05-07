@@ -1,8 +1,9 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-//import { UserContext } from "./protectedRoutes/UserContext";
+import { UserContext } from "./protectedRoutes/UserContext";
 import Footer from "./Footer";
 import Form from "./Form";
+//import { UserContext } from "./protectedRoutes/UserContext";
 
 
 const Login = () => {
@@ -10,7 +11,7 @@ const Login = () => {
     const [password, setPassword] = useState("")
 
     console.log(localStorage.uid)
-   // const { user, setUser } = useContext(UserContext);
+    //const { user, setUser } = useContext(UserContext);
    
     const navigate = useNavigate();
     const onLogin = async (e) => {

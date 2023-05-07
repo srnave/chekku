@@ -1,5 +1,7 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
+ import React from 'react';
+ import ReactDOM from 'react-dom/client';
+ import './index.css';
+ import App from './App';
 
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -16,33 +18,10 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Router } from "react-router-dom";
-import Navbars from "./Navbars";
-import Home from "./Home";
-import Form from "./Form";
-import Product from"./Product";
-import Feedback from "./Feedback";
-import Register from "./Register";
-import Login from "./Login";
-import './index.css';
+//import ReactDOM from "react-dom/client";
 
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbars />}>
-          <Route index element={<Home />} />
-          <Route path="form" element={<Form />} />
-          <Route path="product" element={<Product />} />
-          <Route path="feedback" element={<Feedback/>}/>
-          <Route path="register" element={<Register/>}/>
-          <Route path="login" element={<Login/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
