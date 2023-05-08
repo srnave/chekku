@@ -3,12 +3,14 @@ import './Product.css'
 import Footer from './Footer'
 import Itemcard from './Itemcard'
 import data from './data'
+import Navbars from './Navbars'
 
 export default function Product() {
   console.warn(data.productdata);
   return (
     <>
     <div class="body" >
+    
     <br></br>
     <br></br>
     <br></br>

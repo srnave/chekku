@@ -14,7 +14,7 @@ const data={
         {
             id:2,
             img:image2,
-            title:'Ground Oil',
+            title:'Groundnut Oil',
             price:240,
         },
         {
