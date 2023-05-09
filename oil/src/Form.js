@@ -407,12 +407,14 @@ const Register = ()=>{
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pincode" name="pincode" type="text" onChange={(e) => setPincode(e.target.value)} value={pincode}  placeholder="6380056" />
                     </div>
                     </div>
+                    <center>
                     <div style={{alignItems:"center",textAlign:"center",paddingLeft:"10px"}} class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
                             Total Amount
                         </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="price" name="price" type="text" value={cartTotal} readOnly />
                     </div>
+                    </center>
                 
               
              

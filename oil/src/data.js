@@ -1,7 +1,8 @@
-import image1 from '../src/images/rkcoconut.jpg'
-import image2 from '../src/images/rkgroundnut.jpg'
-import image3 from '../src/images/rksesame.jpg'
-import image4 from '../src/images/rkghee.jpg'
+import image1 from '../src/images/c.jpg'
+import image2 from '../src/images/gr.jpg'
+import image3 from '../src/images/s.jpg'
+import image4 from '../src/images/g.jpg'
+import './data.css'
 
 const data={
     productdata:[
