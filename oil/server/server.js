@@ -20,7 +20,7 @@ mongoose.connect("mongodb+srv://meianbu:rkchekku@cluster0.vlaoi.mongodb.net/", {
 app.post("/signup",SignUp)//checked
 
 //Login API
-app.post("/login",Login);//checked
+//app.post("/login",Login);//checked
 
 app.listen(8080, () => {
     console.log("Server is runing at port 8080")

@@ -1,15 +1,8 @@
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({
-  userid:{
-    type: Number,
-    required: true
-  },
-  firstname: {
-    type: String,
-    required: true,
-  },
-  lastname: {
+
+  name: {
     type: String,
     required: true,
   },
@@ -17,13 +10,21 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  oil: {
+    type: String,
+    required: true,
+  },
+  quantity: {
+    type: Number,
+    default: 0,
+  },
   phoneno: {
     type: Number,
     default: 0,
   },
-  password: {
-    type: String,
-    required: true,
+  tquantity: {
+    type: Number,
+    default: 0,
   },
   streetname: {
     type: String,
@@ -39,6 +40,10 @@ const UserSchema = new mongoose.Schema({
   },
   pincode: {
     type: String,
+    required: true,
+  },
+  price: {
+    type: Number,
     required: true,
   },
  

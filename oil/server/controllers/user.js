@@ -19,19 +19,21 @@ exports.SignUp = async (req, res) => {
         console.log(value.seq);
     }
     console.log(req.body)
-    const { firstname, lastname, email, phoneno, password, streetname, city, state, pincode } = req.body;
+    const { name, email, oil, quantity, phone, tquantity,streetname, city, state, pincode,price } = req.body;
 
     const user = new User({
-        userid,
-        firstname,
-        lastname,
+
+        name,
         email,
-        phoneno,
-        password,
+        oil,
+        quantity,
+        phone,
+        tquantity,
         streetname,
         city,
         state,
-        pincode
+        pincode,
+        price
     })
     user.save();
     res.send({ message: "Successfull Register" })

@@ -174,7 +174,59 @@ import { useState } from "react";
 import Footer from "./Footer";
 import { Link } from 'react-router-dom';
 const Register = ()=>{
+  const form = useRef();
+
+
+  const {isEmpty,
+    totalUniqueItems,
+    items,
+    totalItems,
+    cartTotal,
+    updateItemQuantity,
+    removeItem,
+    emptyCart, }=useCart();
   
+  const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const[oil,setOil]=useState('');
+    const[quantity,setQuantity]=useState('');
+    const [phone, setPhone] = useState('');
+    const[tquantity,settquantity]=useState('');
+    const [streetname, setStreetname] = useState('');
+    const [city, setCity] = useState('');
+    const [state, setState] = useState('Tamil Nadu');
+    const [pincode, setPincode] = useState('');
+    const [price,setPrice]=useState('');
+    
+    function handleAddrTypeChange(e) {
+      setState(e.target.value);
+    }
+    const onSignup = async(e) =>{
+      // e.preventDefault();
+      // try {
+      //   alert("helo");
+      //     const body = { name,email,oil,quantity,phone,tquantity,streetname,city,state,pincode,price }; 
+      //     console.log(body)
+      //     const response = await fetch("http://localhost:8080/signup", {
+      //         method: "POST",
+      //         headers: { "content-Type": "application/json" },
+      //         body: JSON.stringify(body)
+      //     });
+      //     //alert("Successfully logged in"+response.toString());
+      // } catch (err) {
+      //     console.error(err.message);
+      // }
+      emailjs.sendForm('service_2bob0hq', 'template_xklmiff', form.current, 'uxdKIFc-iLYILYTWU')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent");
+          alert("Order mail sent to owner");
+          window.location.href = "/";
+          emptyCart();
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
       // const [formState,setFormState]=useState({});
   
   // const changeHandler = (event) =>{
@@ -199,36 +251,11 @@ const Register = ()=>{
   //   }
   // }
 
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_2bob0hq', 'template_xklmiff', form.current, 'uxdKIFc-iLYILYTWU')
-      .then((result) => {
-          console.log(result.text);
-          console.log("message sent");
-          alert("Order mail sent to owner");
-          window.location.href = "/";
-          emptyCart();
-      }, (error) => {
-          console.log(error.text);
-      });
-    
-  };
-
-  const {isEmpty,
-    totalUniqueItems,
-    items,
-    totalItems,
-    cartTotal,
-    updateItemQuantity,
-    removeItem,
-    emptyCart, }=useCart();
+  
     return(
         <>
          <div class="flex h-screen justify-center mt-6">
-            <form class="w-full max-w-lg"style={{marginTop:"10%",marginLeft:"20%"}} ref={form} onSubmit={sendEmail} >
+            <form class="w-full max-w-lg"style={{marginTop:"10%",marginLeft:"20%"}} ref={form}  >
                 <div class="flex flex-wrap -mx-3 mb-6" >
                 {/* <div class="flex flex-col">
             <label for="name">Name</label>
@@ -242,14 +269,14 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                              Name
                         </label>
-                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text"    placeholder="Raj" required />
+                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text"  onChange={(e) => setName(e.target.value)} value={name}  placeholder="Raj" required />
                      
                     </div>
                     <div class="w-full md:w-1/2 px-3">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                             Email
                         </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="email" type="text"  placeholder="Kumar@gmail.com" required />
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="email" type="text" onChange={(e) => setEmail(e.target.value)} value={email}  placeholder="Kumar@gmail.com" required />
                     </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-6" >
@@ -261,7 +288,7 @@ const Register = ()=>{
                           return(
                                               <>  
                                               
-                                            <input class="  appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="oil"  type="text" name="oil" key={index} value={item.title}  readOnly   style={{textAlign:"center"}}></input>
+                                            <input class="  appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="oil"  type="text" name="oil" key={index} value={item.title}  readOnly   style={{textAlign:"center"}}>{item.titile}</input>
                                               
                                             
                                              
@@ -297,7 +324,7 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                              Phone no
                         </label>
-                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" name="phone" type="text"    placeholder="9876543210" required />
+                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" name="phone" type="text" onChange={(e) => setPhone(e.target.value)} value={phone}    placeholder="9876543210" required />
                      
                     </div>
                     <div class="w-full md:w-1/2 px-3">
@@ -314,7 +341,7 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                             Door no & streetname
                         </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="sname" name="sname" type="text"  placeholder="2/12,periyar street" required/>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="sname" name="sname" type="text" onChange={(e) => setStreetname(e.target.value)} value={streetname} placeholder="2/12,periyar street" required/>
 
                     </div>
                 </div>
@@ -323,14 +350,14 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
                             City
                         </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="city" name="city" type="text"  placeholder="Chennai" required />
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="city" name="city" type="text" onChange={(e) => setCity(e.target.value)} value={city} placeholder="Chennai" required />
                     </div>
                     <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
                             State
                         </label>
                         <div class="relative">
-                            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="state" name="state"   required >
+                            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="state" name="state" onChange={(e) => setState(e.target.value)} value={state}  required >
                                 <option value="Tamil Nadu">Tamil Nadu</option>
                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                 <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
@@ -377,7 +404,7 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-zip">
                             Pincode
                         </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pincode" name="pincode" type="text"  placeholder="6380056" />
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="pincode" name="pincode" type="text" onChange={(e) => setPincode(e.target.value)} value={pincode}  placeholder="6380056" />
                     </div>
                     </div>
                     <div style={{alignItems:"center",textAlign:"center",paddingLeft:"10px"}} class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -390,7 +417,7 @@ const Register = ()=>{
               
              
                 <div class="w-full justify-center px-3 mb-6 md:mb-0 flex items-stretch ">
-                  <div > <button class=" items-start bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline py-4" type="submit" value="send" >
+                  <div > <button class=" items-start bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline py-4" type="submit" value="send"  onClick={onSignup}>
                         Send
                     </button>
                     </div>
