@@ -1,79 +1,71 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
 import image1 from '../src/images/logo.jpg'
-import logo from '../src/images/logo.jpg';
+import { FaMapMarkerAlt,FaPhoneAlt,FaRegEnvelope,FaFacebookF,FaInstagram,FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import Feedback from './Feedback';
+
+
+
 export default function Footer() {
   const myStyle={
-    backgroundRepeat: 'no-repeat',
-    height:'200px',
-    width:'200px',
-    
-};
+    height:'120px',
+    width:'170px',
+    overFlow:'hidden',
+    margin:'0px 0px 0px 55px'
+  }
   return (
     <>
-   
+
 <footer class="footer-distributed">
 
 			<div class="footer-left">
 
-      
+				<img src={image1} style={myStyle}></img>
 
 				<p class="footer-links">
-          {/* <img style={myStyle}src={logo}/> */}
-          <Link to="/">HOME</Link>
+				<Link to="/" class="link-1">Home</Link>
 					
-					<Link to="/form"  >SHOP</Link>
+				<Link to="/login">Shop Now</Link>
 				
-          <Link to="/product" >PRODUCTS</Link>
-				
-					<Link to="/feedback" >FEEDBACK</Link>
-					
-					
-					<Link to="/">CONTACT</Link>
+					<Link to="/feedback">Feedback</Link>
 				</p>
 
-				<p class="footer-company-name">Sri RadheKrishna Chekku Oil</p>
+				<p class="footer-company-name">RK ORGANIC OILS © 2023</p>
 			</div>
 
 			<div class="footer-center">
+        
+				
+			<FaMapMarkerAlt className="iconn"/><p style={{color:"black"}} ><span >No.3/112 A, Adhireddypalayam,</span>	K.Paramathi,
+	Karur, Tamil Nadu,639111</p><br></br><br></br>
 
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
-				</div>
+			
+					<FaPhoneAlt className="iconn"/><p style={{color:"black"}}>+91 8220996938</p><br></br><br></br>
+			
 
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>+1.555.555.5555</p>
-				</div>
-
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:rk@gmail.com">rk@gmail.com</a></p>
-				</div>
+				
+					<FaRegEnvelope className="iconn"/><p><a href="mailto:rk@gmail.com">rkorganicoils@gmail.com</a></p><br></br>
 
 			</div>
 
 			<div class="footer-right">
 
-				<p class="footer-company-about" s>
-					<span>About the company</span>
-					<span>we provide the pure and raw oil with the natural content and attributes that define quality.</span>
-				</p>
+				<p class="footer-company-about">
+					<span style={{color:"black"}}fo>Follow Us</span>
+					</p>
 
-				{/* <div class="footer-icons">
+				<div class="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><FaFacebookF/></a>
+					<a href="#"><FaInstagram/></a>
+					<a href="#"><FaWhatsapp/></a>
 
-				</div> */}
+				</div>
 
 			</div>
 
 		</footer>
-</>
+    </>
   )
-}  
+}

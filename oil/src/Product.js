@@ -3,22 +3,30 @@ import './Product.css'
 import Footer from './Footer'
 import Itemcard from './Itemcard'
 import data from './data'
-import Navbars from './Navbars'
 
 export default function Product() {
   console.warn(data.productdata);
   return (
     <>
     <div class="body" >
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
   
-    <div class="row">
+    <div>
+      <center>
+    <p style={{color:"darkgreen",fontSize:"50px"}}><b>TASTE THE FLAVOR, MISS THE FAT</b></p>
+<br></br><br></br>
+        
+        <br></br>
+        <p style={{color:"darkgreen",fontSize:"30px"}}><b>SHOP OUR PURE PRODUCTS AND ENJOY</b></p>
+
+        <br></br><br></br>
+        </center>
       {data.productdata.map((item,index)=>{
         return(
 <Itemcard 
@@ -31,7 +39,7 @@ img={item.img}
       })}
    
 </div>
-<br></br>
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
 <Footer/>
 </div>
 

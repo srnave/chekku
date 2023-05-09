@@ -5,7 +5,7 @@ import { useCart } from "react-use-cart";
 const Itemcard=(props)=>{
     const {addItem} = useCart();
     return(
-        <div class="column">
+        <div class="column1">
         <div class="card">
     <div class="imgBox">
       <img src={props.img} alt="mouse corsair" class="mouse"/>
@@ -19,6 +19,7 @@ const Itemcard=(props)=>{
     </div>
     </div>
     </div>
+  
     )
 }
 export default Itemcard;

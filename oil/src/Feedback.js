@@ -2,6 +2,7 @@ import React ,{useRef}from "react";
 import './Feedback.css';
 import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
+import Footer from './Footer';
 const Feedback=()=>{
     const form = useRef();
 
@@ -20,9 +21,10 @@ const Feedback=()=>{
   };
 return(
     <>   
+    <br></br><br></br><br></br>
     <center> 
       <form ref={form} onSubmit={sendEmail}>
-    <div class="container">
+    <div class="container1">
   
     <label for="fname">Name</label>
     <input type="text" id="fname" name="name" placeholder="Your name.."/>
@@ -40,6 +42,8 @@ return(
 </div>
 </form>
 </center>
+<br></br><br></br>
+<Footer/>
 </>
 
   

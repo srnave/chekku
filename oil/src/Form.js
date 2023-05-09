@@ -56,12 +56,12 @@ export default function Form() {
     <>
   <center>
     
-    <div class="container">
+    <div class="container2">
       <div class="left">
         <div class="form">       
     <form ref={form} onSubmit={sendEmail}>
         <label>Name *</label>
-        <input type="text" name='name' class="form-field animation a3" required></input>
+        <input type="text" name='name' class="form-field animation a3" required style={{textAlign:"center"}}></input>
         <br></br><br></br>
         {/* <label>Last name *</label>
         <input type="text" required></input>
@@ -71,9 +71,10 @@ export default function Form() {
         {items.map((item,index)=>{
                 return(
                   <>  
-                  <br/>                <input name="oil" key={index} value={item.title}  readOnly ></input>
-                  <labe>Quantity:</labe> <input name="quantity" value={item.quantity} readOnly></input>
-                  <br/>
+                  
+                  <br></br><input name="oil" key={index} value={item.title}  readOnly   style={{textAlign:"center"}}></input>
+                  
+                  
                  
                   </>
 
@@ -92,13 +93,13 @@ export default function Form() {
         <br></br><br></br> */}
         
         <label>Street address *</label>
-        <input type="text" class="form-field animation a3" name='address'  required></input>
+        <input type="text" class="form-field animation a3" name='address'  required style={{textAlign:"center"}}></input>
         <br></br><br></br>
         <label>Town / City *</label>
-        <input type="text" class="form-field animation a3" name='city'  required></input>
+        <input type="text" class="form-field animation a3" name='city'  required style={{textAlign:"center"}}></input>
         <br></br><br></br>
         <label for="state">State *</label>
-    <select id="state" class="form-field animation a3" name="state" >
+    <select id="state" class="form-field animation a3" name="state" style={{textAlign:"center"}} >
     <option value=""></option>
     <option value="AN">Andaman and Nicobar Islands</option>
     <option value="AP">Andhra Pradesh</option>
@@ -140,19 +141,19 @@ export default function Form() {
 </select>
        <br></br><br></br>
        <label>Phone *</label>
-        <input type="text" class="form-field animation a3" name='phone'></input>
+        <input type="text" class="form-field animation a3" name='phone' required style={{textAlign:"center"}}></input>
         <br></br><br></br>
         <label>Email address *</label>
-        <input type="email" class="form-field animation a3"name='user_email'  required></input>
+        <input type="email" class="form-field animation a3"name='user_email'  required style={{textAlign:"center"}}></input>
         <br></br><br></br>
         <label>Total Quantity *</label>
-        <input type="text" class="form-field animation a3" name='tquantity' value={totalItems} readOnly></input>
+        <input type="text" class="form-field animation a3" name='tquantity' value={totalItems} readOnly style={{textAlign:"center"}}></input>
         <br></br><br></br>
         <label>Total Amount *</label>
-        <input type="text" class="form-field animation a3" name='price' value={cartTotal} readOnly></input>
+        <input type="text" class="form-field animation a3" name='price' value={cartTotal} readOnly style={{textAlign:"center"}}></input>
         <br></br><br></br>
         
-        <button type="submit" value="send" >Send</button>
+        <button type="submit" value="send" class="btn" >Send</button>
      
         {/* <button type="submit" class="button .button1">Order</button> */}
     </form>

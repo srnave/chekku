@@ -120,3 +120,12 @@ body {
   height: 300px;
   width: auto;
 }
+
+.column1{
+  float: center;
+    width: 24%;
+    padding: 10px;
+    margin-left: 14px;
+    margin-right: 1px;
+    height: 300px;
+}
