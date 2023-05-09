@@ -26,7 +26,7 @@ export default function Footer() {
 				<p class="footer-links">
 				<Link to="/" class="link-1">Home</Link>
 					
-				<Link to="/login">Shop Now</Link>
+				<Link to="/product">Shop Now</Link>
 				
 					<Link to="/feedback">Feedback</Link>
 				</p>

@@ -4,6 +4,13 @@ import './Product.css';
 import { useCart } from "react-use-cart";
 const Itemcard=(props)=>{
     const {addItem} = useCart();
+    const handle=()=>{
+     // alert("added to cart");
+     addItem(props.item);
+     alert("A new Product has been added to your cart");
+     
+      
+    }
     return(
         <div class="column1">
         <div class="card">
@@ -15,7 +22,8 @@ const Itemcard=(props)=>{
       <h3>{props.title}</h3>
       <h2 class="price">{props.price}</h2>
       <br/>
-     <button  class="buy" onClick={()=>addItem(props.item)} onMouseLeave={()=>{alert("Added to cart")}} >Add to cart</button>
+     {/* <button  class="buy" onClick={()=>addItem(props.item)}  >Add to cart</button> */}
+     <button  class="buy" onClick={handle}  >Add to cart</button>
     </div>
     </div>
     </div>

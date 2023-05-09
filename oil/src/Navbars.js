@@ -4,6 +4,8 @@ import Home from "./Home";
 import "./Navbars.css";
 import logo from '../src/images/logo.jpg';
 import { FaShoppingCart,FaHome,FaShoppingBag,FaScroll,FaPenSquare } from "react-icons/fa";
+import { useCart } from "react-use-cart";
+
 
 
 const Navbars = () => {
@@ -12,17 +14,23 @@ const Navbars = () => {
     width:'10%',
     float:'left',
   }
+  
+  const {
+    totalItems,
+    totalUniqueItems
+     }=useCart();
   return (
     <>
 
     <div className="navbar">
+      <br></br>
       <nav >
         <ul>
           <li>
         <img style={myStyle}src={logo}/>
         </li>
           <li>
-            <Link to="/form" className="navbar1" ><FaShoppingCart size={50}/></Link>
+            <Link to="/form" className="navbar1" > <span style={{color:"black",fontSize:"30px",paddingLeft:"14px"}}>{totalUniqueItems}</span><FaShoppingCart size={50}/></Link>
           </li>
           <li>
             <Link to="/"  className="navbar1" ><FaHome size={50}/></Link>
