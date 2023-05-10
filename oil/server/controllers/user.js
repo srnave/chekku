@@ -19,7 +19,7 @@ exports.SignUp = async (req, res) => {
         console.log(value.seq);
     }
     console.log(req.body)
-    const { name, email, oil, quantity, phone, tquantity,streetname, city, state, pincode,price } = req.body;
+    const { name, email, oil, quantity, phoneno, tquantity,streetname, city, state, pincode,price } = req.body;
 
     const user = new User({
 
@@ -27,7 +27,7 @@ exports.SignUp = async (req, res) => {
         email,
         oil,
         quantity,
-        phone,
+        phoneno,
         tquantity,
         streetname,
         city,

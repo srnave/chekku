@@ -21,6 +21,7 @@ const Itemcard=(props)=>{
     <div class="contentBox">
       <h3>{props.title}</h3>
       <h2 class="price">Rs.{props.price}</h2>
+      <h4 style={{fontSize:"20px",color:"white"}}>1 Litre</h4>
       <br/>
      {/* <button  class="buy" onClick={()=>addItem(props.item)}  >Add to cart</button> */}
      <button  class="buy" onClick={handle}  >Add to cart</button>

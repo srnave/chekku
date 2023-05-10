@@ -190,7 +190,7 @@ const Register = ()=>{
     const [email, setEmail] = useState('');
     const[oil,setOil]=useState('');
     const[quantity,setQuantity]=useState('');
-    const [phone, setPhone] = useState('');
+    const [phoneno, setPhoneno] = useState('');
     const[tquantity,settquantity]=useState('');
     const [streetname, setStreetname] = useState('');
     const [city, setCity] = useState('');
@@ -202,20 +202,20 @@ const Register = ()=>{
       setState(e.target.value);
     }
     const onSignup = async(e) =>{
-      // e.preventDefault();
-      // try {
-      //   alert("helo");
-      //     const body = { name,email,oil,quantity,phone,tquantity,streetname,city,state,pincode,price }; 
-      //     console.log(body)
-      //     const response = await fetch("http://localhost:8080/signup", {
-      //         method: "POST",
-      //         headers: { "content-Type": "application/json" },
-      //         body: JSON.stringify(body)
-      //     });
-      //     //alert("Successfully logged in"+response.toString());
-      // } catch (err) {
-      //     console.error(err.message);
-      // }
+       e.preventDefault();
+      try {
+        alert("helo");
+          const body = { name,email,oil,quantity,phoneno,tquantity,streetname,city,state,pincode,price }; 
+          console.log(body)
+          const response = await fetch("http://localhost:8080/signup", {
+              method: "POST",
+              headers: { "content-Type": "application/json" },
+              body: JSON.stringify(body)
+          });
+          //alert("Successfully logged in"+response.toString());
+      } catch (err) {
+          console.error(err.message);
+      }
       emailjs.sendForm('service_2bob0hq', 'template_xklmiff', form.current, 'uxdKIFc-iLYILYTWU')
       .then((result) => {
           console.log(result.text);
@@ -269,7 +269,7 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                              Name
                         </label>
-                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text"  onChange={(e) => setName(e.target.value)} value={name}  placeholder="Raj" required />
+                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="name" name="name" type="text" onChange={(e) => setName(e.target.value)} value={name} placeholder="Raj" required />
                      
                     </div>
                     <div class="w-full md:w-1/2 px-3">
@@ -288,7 +288,7 @@ const Register = ()=>{
                           return(
                                               <>  
                                               
-                                            <input class="  appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="oil"  type="text" name="oil" key={index} value={item.title}  readOnly   style={{textAlign:"center"}}>{item.titile}</input>
+                                            <input class="  appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="oil"  type="text" name="oil" key={index}   value={item.title} readOnly   style={{textAlign:"center"}}></input>
                                               
                                             
                                              
@@ -306,7 +306,7 @@ const Register = ()=>{
                         </label>
                         {items.map((item,index)=>{
                           return(
-                        <input class="peer appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="quantity" name="quantity" type="text" key={index} value={item.quantity} readOnly required/>
+                        <input class="peer appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="quantity" name="quantity" type="text" key={index}   value={item.quantity} readOnly required/>
                         )})}
                     </div>
                 </div>
@@ -324,7 +324,7 @@ const Register = ()=>{
                         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                              Phone no
                         </label>
-                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" name="phone" type="text" onChange={(e) => setPhone(e.target.value)} value={phone}    placeholder="9876543210" required />
+                        <input class=" appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="phone" name="phone" type="text" onChange={(e) => setPhoneno(e.target.value)} value={phoneno}    placeholder="9876543210" required />
                      
                     </div>
                     <div class="w-full md:w-1/2 px-3">

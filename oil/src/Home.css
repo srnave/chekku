@@ -44,7 +44,7 @@ html, body {
 
 
 .card1 {
-  box-shadow: 10px 10px 20px 5px black;
+  box-shadow:5px 10px #888888;
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -52,7 +52,10 @@ html, body {
   background-color: lightgray;
   color:black;
   width: 100%;
+ 
+  
 }
+
 
 table,th,td,tr{
   padding: 30px;
