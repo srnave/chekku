@@ -32,6 +32,7 @@ const MyCart=()=>{
                         <th class="th1">Product Name</th>
                         <th class="th1">Price</th>
                         <th class="th1">Quantity</th>
+                        <th class="th1">Amount</th>
                         <th class="th1">Edit</th>
                     </tr>
                {items.map((item,index)=>{
@@ -45,6 +46,7 @@ const MyCart=()=>{
                             {/* <td>{item.desc}</td> */}
                             <td class="td1">{item.price}</td>
                             <td class="td1">{item.quantity}</td>
+                            <td class="td1">{item.quantity * item.price}</td>
                             <td class="td1">
                                 <FaMinus onClick={() => updateItemQuantity(item.id, item.quantity - 1)}></FaMinus>
                                 <br></br>

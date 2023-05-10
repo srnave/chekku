@@ -173,9 +173,10 @@ import React from "react";
 import { useState } from "react";
 import Footer from "./Footer";
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 const Register = ()=>{
   const form = useRef();
-
+  
 
   const {isEmpty,
     totalUniqueItems,
@@ -204,7 +205,7 @@ const Register = ()=>{
     const onSignup = async(e) =>{
        e.preventDefault();
       try {
-        alert("helo");
+        
           const body = { name,email,oil,quantity,phoneno,tquantity,streetname,city,state,pincode,price }; 
           console.log(body)
           const response = await fetch("http://localhost:8080/signup", {
@@ -289,6 +290,7 @@ const Register = ()=>{
                                               <>  
                                               
                                             <input class="  appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="oil"  type="text" name="oil" key={index}   value={item.title} readOnly   style={{textAlign:"center"}}></input>
+                                              
                                               
                                             
                                              
@@ -437,6 +439,7 @@ const Register = ()=>{
         <br></br>
         <br></br>
         <br></br>
+        <br></br><br></br><br></br><br></br>
         <Footer/>
         </>
     )
