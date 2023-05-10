@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import image1 from '../src/images/logo.jpg'
-import { FaMapMarkerAlt,FaPhoneAlt,FaRegEnvelope,FaFacebookF,FaInstagram,FaWhatsapp } from "react-icons/fa";
+import { FaMapMarkerAlt,FaPhoneAlt,FaRegEnvelope,FaFacebookF,FaInstagram,FaInstagramSquare,FaWhatsapp } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Feedback from './Feedback';
 
@@ -57,9 +57,9 @@ export default function Footer() {
 
 				<div class="footer-icons">
 
-					<a href="#"><FaFacebookF/></a>
-					<a href="#"><FaInstagram/></a>
-					<a href="#"><FaWhatsapp/></a>
+					{/* <a href=""><FaFacebookF/></a> */}
+					<a href="https://www.instagram.com/rk_chekku_official/"><FaInstagram size={30}/></a>
+					<a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2Fgjcjtr&e=AT2wmYMnI6TmucLm7PbDatq6ZpfmihEuSqTnMLrG6WjkiRCKn9gwPG9F9plULtnDh_K-S07-vZ0m8_Ee_o0ACQzEHSKcYroc"><FaWhatsapp size={30}/></a>
 
 				</div>
 
