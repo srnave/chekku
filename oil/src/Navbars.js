@@ -11,7 +11,7 @@ import { useCart } from "react-use-cart";
 const Navbars = () => {
   const myStyle={
     height:'100px',
-    width:'10%',
+    width:'8%',
     float:'left',
   }
   
