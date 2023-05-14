@@ -88,7 +88,7 @@ const myStyle5={
   <br></br><br></br><br></br><br></br>
   <center>
   
-  <p style={{color:"darkgreen",fontSize:"50px"}}><b>TASTE THE FLAVOR, MISS THE FAT</b></p>
+  <p  class="textpara"style={{color:"darkgreen",fontSize:"30px"}}><b>TASTE THE FLAVOR, MISS THE FAT</b></p>
 <br></br><br></br><br></br>
         <h1 style={{color:"darkgreen",fontSize:"30px"}}><b>Our Products</b></h1>
         <br></br>
