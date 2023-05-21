@@ -5,23 +5,18 @@ import "./Navbars.css";
 import logo from '../src/images/logo.jpg';
 import { FaShoppingCart,FaHome,FaShoppingBag,FaScroll,FaPenSquare } from "react-icons/fa";
 import { useCart } from "react-use-cart";
-
-
-
 const Navbars = () => {
   const myStyle={
     height:'100px',
     width:'8%',
     float:'left',
   }
-  
   const {
     totalItems,
     totalUniqueItems
      }=useCart();
   return (
     <>
-
     <div className="navbar">
       <br></br>
       <nav >
@@ -40,8 +35,7 @@ const Navbars = () => {
           </li>
           <li>
             <Link to="/feedback"  className="navbar1"  ><FaPenSquare size={50}/></Link>
-          </li>
-          
+          </li>        
         </ul>
       </nav>
       </div>
@@ -49,5 +43,4 @@ const Navbars = () => {
     </>
   )
 };
-
 export default Navbars;

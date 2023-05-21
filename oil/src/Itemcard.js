@@ -7,17 +7,14 @@ const Itemcard=(props)=>{
     const handle=()=>{
      // alert("added to cart");
      addItem(props.item);
-     alert("A new Product has been added to your cart");
-     
-      
+     alert("A new Product has been added to your cart");     
     }
     return(
         <div class="column1">
         <div class="card">
     <div class="imgBox">
       <img src={props.img} alt="mouse corsair" class="mouse"/>
-    </div>
-    
+    </div>    
     <div class="contentBox">
       <h3>{props.title}</h3>
       <h2 class="price">Rs.{props.price}</h2>
@@ -28,7 +25,6 @@ const Itemcard=(props)=>{
     </div>
     </div>
     </div>
-  
     )
 }
 export default Itemcard;

@@ -13,9 +13,6 @@ import MyCart from './MyCart';
  import { UserContext } from "./protectedRoutes/UserContext";
  import { useState } from "react";
  import {ProtectedRoutes} from "./protectedRoutes/ProtectedRoutes";
- 
-
-
     export default function App() {
       const [user, setUser] = useState("");
       return (
