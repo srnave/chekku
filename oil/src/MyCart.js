@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import {useCart} from 'react-use-cart';
 import { FaMinus, FaPlus, FaTrash } from "react-icons/fa";
 import './MyCart.css';
+import Offer from "./Offer";
 import Footer from './Footer';
 const MyCart=()=>{
+    
     const {isEmpty,
         totalUniqueItems,
         items,
@@ -14,6 +16,7 @@ const MyCart=()=>{
         removeItem,
         emptyCart, }=useCart();
         if(isEmpty) return <h1 style={{textAlign:"center",paddingTop:"20%",fontSize:"40px"}}><center>Your Cart is empty</center></h1>
+ 
     return(
         
         
@@ -65,7 +68,9 @@ const MyCart=()=>{
     <h5><b>Types of Products:{totalUniqueItems} Total Items:{totalItems}</b></h5>
     <br/>
     <div>
-        <h2><b>Total price: Rs:{cartTotal}</b></h2>
+        <Offer price={cartTotal}/>
+      
+        {/* <h2><b>Total price: Rs:{cartTotal}</b></h2> */}
     </div>
     <div>
     <button  class="btn1" onClick={()=> emptyCart()} >Empty Cart</button>
