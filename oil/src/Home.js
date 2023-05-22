@@ -15,10 +15,7 @@ import image10 from '../src/images/ground nut oil.jpg'
 import image11 from '../src/images/Sesame Oil.png'
 import image12 from '../src/images/Oil-cake.jpg'
 import image13 from '../src/images/g.jpg'
-
-
-function Home(){
-      
+function Home(){      
     const myStyle1={
       backgroundRepeat: 'no-repeat',
       height:'500px',
@@ -38,7 +35,6 @@ const myStyle4={
   height:'100px',
   width:'200px',
   float:'center',
-  
 }
 const myStyle5={
   height:'70px',
@@ -46,7 +42,6 @@ const myStyle5={
   float:'left',
   overFlow:'hidden'
 }
-
     return(
         <>
       <br></br>
@@ -86,14 +81,12 @@ const myStyle5={
 </div>
 </center>
   <br></br><br></br><br></br><br></br>
-  <center>
-  
+  <center> 
   <p  class="textpara"style={{color:"darkgreen",fontSize:"30px"}}><b>TASTE THE FLAVOR, MISS THE FAT</b></p>
 <br></br><br></br><br></br>
         <h1 style={{color:"darkgreen",fontSize:"30px"}}><b>Our Products</b></h1>
         <br></br>
         <p style={{color:"darkgreen",fontSize:"30px"}}><b>SHOP OUR PURE PRODUCTS AND ENJOY</b></p>
-
         <br></br><br></br>
         <div class="row1">
   <div class="column1">
@@ -106,7 +99,6 @@ const myStyle5={
   <br></br>
 </div>
 </div>
-
   <div class="column1">
 <div class="card1">
 <br></br><br></br>
@@ -117,7 +109,6 @@ const myStyle5={
   <br></br>
 </div>
 </div>
-
 <div class="row1">
   <div class="column1">
 <div class="card1">
@@ -136,19 +127,11 @@ const myStyle5={
   <h1 style={{color:"darkgreen"}}><b>Ghee</b></h1>
   <br></br>
   <p style={{color:"darkgreen"}}>Cold-pressed ghee is made using a traditional method of churning yogurt or cream to separate the butterfat from the buttermilk, without the use of heat.
-
-
-
-
-</p><br></br>
-  
+</p><br></br>  
 </div>
 </div>
 </div>
-
-
-</div>
-        
+</div>  
 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         <h1 style={{color:"darkgreen",fontSize:"30px" }} ><b>About Our Services</b></h1>
         <br></br>
@@ -164,11 +147,8 @@ const myStyle5={
   <td style={{color:"darkgreen"}}><img src={image4} style={myStyle5}></img>Carefully selected products, handmade and natural</td>
 </table>
 </center>
-
-
-        </center>
+  </center>
         <br></br><br></br>
-        {/* </div>  */}
          <Footer/> 
         </>
     )

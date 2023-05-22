@@ -18,16 +18,10 @@ const MyCart=()=>{
         if(isEmpty) return <h1 style={{textAlign:"center",paddingTop:"20%",fontSize:"40px"}}><center>Your Cart is empty</center></h1>
  
     return(
-        
-        
 <>
-
-<div>
-    
+<div>  
     <br></br><br></br><br></br><br></br>
-    
     <center>
-    
     <table class="table1">
         <tbody>      
         <tr>
@@ -80,8 +74,7 @@ const MyCart=()=>{
     <Link to="/buy"><button class="btn1">
         Buy Now
     </button></Link>
-    </div>
-    
+    </div>    
     </center>
     <br/>
     <Footer/>
